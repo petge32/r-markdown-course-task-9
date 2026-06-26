@@ -1,0 +1,33 @@
+---
+title: "Projects"
+---
+
+# Projects
+
+This page contains a small example project created with R Markdown.
+
+## Project 1: Exploring the `cars` dataset
+
+The built-in `cars` dataset contains measurements of car speed and stopping distance.
+
+In this example, the relationship between speed and stopping distance is explored with R code and visualized with a simple scatter plot.
+
+```{r cars-data, echo=TRUE}
+head(cars)
+```
+
+```{r cars-summary, echo=TRUE}
+summary(cars)
+```
+
+```{r cars-plot, echo=FALSE}
+plot(
+  cars$speed,
+  cars$dist,
+  xlab = "Speed",
+  ylab = "Stopping distance",
+  main = "Stopping Distance by Speed"
+)
+```
+
+The plot shows that stopping distance tends to increase as speed increases.
